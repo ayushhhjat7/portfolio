@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Hero</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="fade-in">Hi, I'm <span>Ayush Chaudhary</span></h1>
+      <p class="fade-in delay">Creative Web Developer & Designer</p>
+      <div class="buttons fade-in delay-more">
+        <a href="portfolio.html" class="btn primary">View Portfolio</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+  <!-- About Me Section -->
+<section class="about" id="about">
+    <div class="container">
+      <div class="about-image fade-in-left">
+        <img src="Nowy_projekt_12.png" alt="My photo" />
+      </div>
+      <div class="about-text fade-in-right">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate <strong>web developer</strong> with a love for creating
+          interactive digital experiences. With a background in design and development,
+          I specialize in building responsive, fast, and engaging web applications.
+        </p>
+        <p>
+          I thrive on solving problems with code and collaborating with others to bring
+          creative ideas to life.
+        </p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+      <h2 data-aos="fade-up">Get In Touch</h2>
+      <p data-aos="fade-up" data-aos-delay="100">I'd love to hear from you! Whether you have a question or want to start a project, feel free to reach out.</p>
+  
+      <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+        <form action="#">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>  
+<!-- Dark/Light Mode Toggle Button -->
+<div class="mode-toggle">
+    <button id="toggle-btn">🌙</button>
+  </div>  
+  <header>
+    <div class="logo">
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+    <nav class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <script src="script.js" defer></script>    
+</body>
+</html>
